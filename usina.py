@@ -5,7 +5,6 @@ class Usina:
         self._nivel= nivel
         self._actuator = False
     def get_sensor(self):
-        print(self._actuator)
         if self._actuator == True:
             self._nivel = self._nivel-(random.random()+1)
         return self._nivel
